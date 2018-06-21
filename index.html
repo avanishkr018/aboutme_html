@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+        <meta charset="utf-8">
+        <title>AVANISH KUMAR</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="MYDESIGNS">
+        <meta name="author" content="Avanish Kumar">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="black">                            <!-- Chrome, Firefox OS and Opera -->
+        <meta name="msapplication-navbutton-color" content="black">          <!-- Windows Phone -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- iOS Safari -->
+        <link rel="manifest" href="index.html">
+        <link rel="apple-touch-icon" href="assets/icons/icon.png">
+        <link rel="icon" href="assets/icons/favicon.png" />
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <main class="invisible">
+            <hr>
+            <p>
+				
+                <br>
+				    AVANISH KUMAR
+                <br>
+                <br>
+            </p>
+            <hr>
+            <p>
+				<br>
+Simply said, <br>
+I design and code.<br>
+And... I like good food<br>
+I currently tinker around with my Bachelor exploring human centered machine learning and human centric lighting. (Yeah just slap a human centric or centered to anything these days...) <br><br>
+
+I am either smiling or looking super serious. If it's the later one, I am probably thinking about food. <br>
+
+But Avanish, why should we work with you?<br>
+Simple answer. The experience of designing products of any scale. Real Products. Real use-cases. Real challenges. Not your dribbble or behance eye-candy designer. <br>
+
+What's the work I would love to do the most?<br>
+This question is particularly hard. As a hybrid designer and developer I enjoy the challenges of analog installations. Especially cybernetics. <br>
+
+How and where do I work?<br>
+I mostly work remotely in 2-hour increments. But I am open for interesting job offers. <br>
+
+Random fact about me:<br>
+I wear black almost exclusively and as I love to tell it's the color of my soul. <br>
+
+Hit me up!<br>
+Always keen to explore new cultures, people, experiences and challenges.<br>
+<b>meetavanish at gmail.com</b>
+
+                <br>
+            </p>
+            <hr>
+            
+            <p>
+                <br>
+				I am a Full-Stack Developer and a Design lover.I am engineer by profession and an UI / UX Developer too.
+				Love to explore Latest Design Techniques in my work. My area of interest includes Web Development, Android UI / UX 
+				Prototyping and Software Development.
+                <br>
+                
+            </p>
+			<hr>
+        </main>
+    </body>
+    <script src="assets/js/js.js"></script>
+    <script>
+
+        js.ert.setup( function(){
+           js.ert.track(document.querySelector('main'));
+        });
+
+        // old tiroir code
+        window.addEventListener('load', function(){
+
+            // Knuth shuffle:
+            function shuffle(array) {
+                var idx = array.length;
+                while (0 !== idx) {
+                    var r = Math.floor(Math.random() * idx);
+                    idx -= 1;
+                    var t = array[idx];
+                    array[idx] = array[r];
+                    array[r] = t;
+                }
+                return array;
+            }
+
+            var s = shuffle([
+                // ---- cheers
+                'hi',
+                'yo',
+                'ciao',
+                'viva',
+                'salut',
+                'hello',
+                'grüezi',
+                'prosit',
+                'olà olà',
+                'bonjour',
+                'namaste',
+                'guten Tag',
+                'shaba-daba',
+                'go to hell',
+                'buona notte',
+                'buenas dias',
+                'hasta la victoria',
+                'ooooooooooooooooooooh',
+                // ---- love
+                '“I love you”',
+                // '“I ♥ ♠ ♦ ♣”',
+                '“I love my cat”',
+                '“I want to be your slave”',
+                // ---- thats
+                'that life is life',
+                'that you liked your dinner',
+                'that Avanish is your father',
+                'that you don’t want to write me',
+                'that it’s time for a new haircut',
+                'that sex or fox are better than fax',
+                'that it’s common to say it’s common',
+                'that aaaah is not the same as ooooh',
+                // ---- colors
+                'that blue is your favourite color',
+                'that gold is your favourite color',
+                'that gray is your favourite color',
+                // ---- numbers
+                'that four has four letters',
+                'that five has four letters',
+                'that nine has four letters',
+                'that π is close to, but not exactly 3.1415',
+                // 'that 1 one stays to 2 twos like 3 trees stay to 4 Fords',
+                // ---- animals
+                'that slick worms eat silk',
+                'that sheep sings while ship sinks',
+                'that gold is fish and golf is dish',
+                'that you saw a cat sleeping in a box',
+                'that the fly flies and the flies fly',
+                // 'that a bird’s burden is the weight of a feather',
+                // 'that bird is feather’s father but not vice-versa',
+            ]);
+
+            var c = 0;
+            function swap(){
+                c = ++c % s.length;
+                var e = document.querySelector('main .swapper');
+                //e.href = 'mailto:andreas@ertdfgcvb.com?subject=' + s[c];
+                e.innerText = s[c];
+                js.ert.refresh();
+            }
+            swap();
+            setInterval( swap, 9000);
+        });
+    </script>
+</html>
